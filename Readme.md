@@ -22,7 +22,6 @@
 -   Strikes display
 -   7-Segment Count down timer
 -   Buzzer/Beeper
--   Dramatic LEDs
 -   Fake Batteries
 
 ### <a href="#microprocessor-specs" style="color:inherit">Microprocessor</a>:
@@ -78,7 +77,13 @@
     - LT should be held hight
 
 ### LED Controller
--   Using the [IS31FL3235A-QFLS2-TR](https://www.digikey.ca/en/products/detail/lumissil-microsystems/IS31FL3235A-QFLS2-TR/7219609) 
+-   Using the [IS31FL3235A-QFLS2-TR](https://www.digikey.ca/en/products/detail/lumissil-microsystems/IS31FL3235A-QFLS2-TR/7219609) to control up to 28 LEDS
+-   LED Break Down:
+    - RBG leds for each 5 models (3x5=15)
+    - 4 various colour leds for Capacitive Simon Slider (15+4=19)
+    - 3 for strikes display (19+3=22)
+    - 1 through-hole morse code LED (22+1=23)
+-   LED driver uses I2C
 
 ### Buzzer Beeper and Dramatic LEDs Module
 -   Using 3V magnetic buzzer [WT-0904T](https://www.digikey.ca/en/products/detail/soberton-inc/WT-0904T/16384510)
@@ -89,7 +94,7 @@
 -   High resistance voltage divider to keep current draw in miliamp range for maximum use of batteries
 -   No voltage divider voltage < 3V. Connected to ADC for measurment 
 
-### Configuration Jumpers (no pins left :disappointed:)
+### Configuration Jumpers
 -   Any remaining GPIO pins can be connected to jumper switches to allow for game configuration.
 
 
