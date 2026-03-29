@@ -15,6 +15,7 @@
 -   Wires
 -   Red Button
 -   Symbols
+-   Who's on First
 -   Capacitive Simon Slider
 -   Morse Code (LED)
 
@@ -36,7 +37,7 @@
 -   Two 6 position screw terminals will be used to hold 6 wires
 -   Through cuting the correct wires in the correct sequence an LED inidcator next to the module will light green
 -   Each wire will connect to ground and the GPIO pins will have an external pullup (3V3)
--   [6 position terminal 1988846](https://www.digikey.ca/en/products/detail/phoenix-contact/1988846/950896)
+-   [6 position terminal 1988846](https://www.digikey.ca/en/products/detail/phoenix-contact/1988846/950896) or 2x [1988817](https://www.digikey.ca/en/products/detail/phoenix-contact/1988817/950893)
 
 ### Red Button Module
 -   Small red button with colour [light indicator](https://www.digikey.ca/en/products/detail/cree-led/CLMVC-FKA-CL1D1L71BB7C3C3/4794065) next to it.
@@ -49,6 +50,11 @@
 -   Because I am cheap 32 leds arranged in a 6x6 without the corners will be used to display a symbol. (Good luck soldering)
 -   Based on the symbol or set of symbols a knob must be turned to the right position position should be descrete and described by whos son first words.  
 -   Use 2x 16-bit shift reg LED driver [STP16CPC26PTR](https://www.digikey.ca/en/products/detail/stmicroelectronics/STP16CPC26PTR/2757642) to drive all 32 leds. Could be daisy chained for even fewer MCU pins
+
+### Who's On First
+-   A small I2C OLED display ([amazon](https://www.amazon.ca/WayinTop-Display-SSD1306-3-3V-5V-Raspberry/dp/B085NHJYBV?th=1)) can display a who's on first like word.
+-   Buttons bellow are labled with more who's on first words
+-   Press the correct buttons in to fill a bar indicator led
 
 ### Capacitive Simon Slider
 -   An 4 coloured through-hole LED will indidicate which dirrection the slider should be slid and in what order to difuse the module.
